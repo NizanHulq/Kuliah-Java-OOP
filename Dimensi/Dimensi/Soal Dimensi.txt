@@ -1,0 +1,35 @@
+Buatlah 3 kelas berikut:
+	1. Kelas Titik 
+		attribut koordX dan koordY
+		method
+			2 buah konstruktor : 
+				1. ketika membuat objek Titik baru,sekaligus memasukkan koordX dan koordY
+				2. ketika membuat objek Titik baru tidak perlu memasukkan koordX dan koordY, defaultnya (0,0)
+			setter dan getter
+			naik()	//isinya : koordY++		kanan()	//isinya : koordX++
+			turun()	//isinya : 	koordY--	kiri()	//isinya : koordX--
+			toString() //isinya : "( "+koordX+" , "+koordY+" )"
+			
+	2. Kelas Garis
+		attribut titikAwal dan titikAkhir
+		method
+			1 buah konstruktor, yaitu ketika membuat objek Garis baru, sekaligus memasukkan titikAwal dan titikAkhir
+			setter dan getter
+			getPanjang() //isinya :
+	jarakX = Math.pow((titikAkhir.getKoordX()-titikAwal.getKoordX()),2);
+	jarakY = Math.pow((titikAkhir.getKoordY()-titikAwal.getKoordY()),2);
+	jarak = Math.pow((jarakX+jarakY),0.5);
+	return jarak;			
+			
+		toString() //isinya : "Garis dari "+titikAwal+" sampai "+titikAkhir
+		
+	3. Main class	
+		buat titik t1(5,8) dan t2(2,4)
+		buat garis g1 (t1, t2)
+		System.out.println(g1);
+			"garis dari (5,8) sampai (2,4)" 
+		System.out.println(g1.getPanjang());
+		t1.naik();
+		System.out.println(g1);
+			"garis dari (5,9) sampai (2,4)"
+		System.out.println(g1.getPanjang());
